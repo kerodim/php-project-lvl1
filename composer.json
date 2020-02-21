@@ -1,0 +1,10 @@
+{
+    "name": "kerodim/php-project-lvl1",
+    "authors": [
+        {
+            "name": "kerodim",
+            "email": "turboboomer2000@gmail.com"
+        }
+    ],
+    "require": {}
+}
