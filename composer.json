@@ -7,6 +7,7 @@
             "email": "turboboomer2000@gmail.com"
         }
     ],
+    "description": "kerodim php-project-lvl1",
     "license": "MIT",
     "scripts": {
         "phpcs": "phpcs"
