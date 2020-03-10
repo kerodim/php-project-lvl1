@@ -1,0 +1,10 @@
+name: main
+on: push
+
+jobs:
+  lint:
+    runs-on: [ubuntu-18.04]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Lint
+        run: make lint
