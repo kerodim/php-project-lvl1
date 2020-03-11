@@ -1,6 +1,6 @@
 {
     "name": "kerodim/php-project-lvl1",
-    "bin": ["bin/brain-games"],
+    "bin": ["bin/bin/brain-even"],
     "authors": [
         {
             "name": "kerodim",
