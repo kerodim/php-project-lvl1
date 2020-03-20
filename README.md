@@ -4,4 +4,7 @@
 ![](https://github.com/kerodim/php-project-lvl1/workflows/main/badge.svg)
 
 Установка пакета
-[![asciicast](https://asciinema.org/a/HbkaZRHJ2AKigo71kTLjk3pWK.svg)](https://asciinema.org/a/HbkaZRHJ2AKigo71kTLjk3pWK)
+[![asciicast](https://asciinema.org/a/2aG2jcb4QQnuNkhysNsuLFIGB.svg)](https://asciinema.org/a/2aG2jcb4QQnuNkhysNsuLFIGB)
+
+Вызов brain-even
+[![asciicast](https://asciinema.org/a/H8f6H7H17MMHZh6Byz5ofrjdc.svg)](https://asciinema.org/a/H8f6H7H17MMHZh6Byz5ofrjdc)
