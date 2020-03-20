@@ -4,7 +4,7 @@
 ![](https://github.com/kerodim/php-project-lvl1/workflows/main/badge.svg)
 
 Установка пакета
-[![asciicast](https://asciinema.org/a/2aG2jcb4QQnuNkhysNsuLFIGB.svg)](https://asciinema.org/a/2aG2jcb4QQnuNkhysNsuLFIGB)
+<script id="asciicast-311938" src="https://asciinema.org/a/311938.js" async></script>
 
 Вызов brain-even
 [![asciicast](https://asciinema.org/a/H8f6H7H17MMHZh6Byz5ofrjdc.svg)](https://asciinema.org/a/H8f6H7H17MMHZh6Byz5ofrjdc)
