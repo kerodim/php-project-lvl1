@@ -15,7 +15,7 @@
     "autoload": {
         "files": [
              "src/Cli.php",
-             "src/Logic.php"
+             "src/Even.php"
         ]
     },
     "require": {
