@@ -1,6 +1,6 @@
 <?php
 
-namespace BrainGames\Logic;
+namespace BrainGames\Even;
 
 function isEven($number)
 {

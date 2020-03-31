@@ -4,7 +4,7 @@ namespace BrainGames\Cli;
 
 use function cli\line;
 use function cli\prompt;
-use function BrainGames\Logic\isEven;
+use function BrainGames\Even\isEven;
 
 function run()
 {
