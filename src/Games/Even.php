@@ -2,6 +2,12 @@
 
 namespace BrainGames\Games\Even;
 
+function question()
+{
+    return rand(1, 100);
+}
+
+
 function isEven($number)
 {
     if ($number % 2 == 0) {

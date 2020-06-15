@@ -2,9 +2,9 @@
 
 namespace BrainGames\Cli;
 
-use function cli\line;
-use function cli\prompt;
-use function BrainGames\Games\Even\isEven;
+use function Cli\line;
+use function Cli\prompt;
+use function BrainGames\Even\isEven;
 
 function run()
 {
@@ -29,4 +29,20 @@ function run()
         }
     }
     line('Congratulations, ' . $name . '!');
+}
+
+
+
+function run_cli()
+{
+    line('Welcome to the Brain Games!');
+    line('Answer "yes" if the number is even, otherwise answer "no".');
+    line('');
+    $name = prompt('May I have your name?');
+    line("Hello, %s!", $name);
+    line('');
+    $raunds = 3;
+    for ($raunds; $raunds >= 1;) {
+        line('Question: ' . question());
+    }
 }
