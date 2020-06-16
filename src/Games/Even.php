@@ -2,7 +2,7 @@
 
 namespace BrainGames\Games\Even;
 
-function question()
+function randomNumber()
 {
     return rand(1, 100);
 }
