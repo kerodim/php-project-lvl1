@@ -63,7 +63,9 @@ function run($game)
                 $correctAnswer = calc_function($question);
                 break;
             default:
-                throw new \Error("Unknown state!");
+                #throw new \Error("Unknown state!");
+                #throw new \Error("Unknown game: {$game}!");
+                throw new \Error("Unknown game: '{$game}'!");
         }
         line('Question: ' . $question);
         $userAnswer = prompt('Your answer');
