@@ -22,7 +22,6 @@ function calculation($expression)
             $operator = $listOfOperation[$index];
         }
     }
-    
     $operatorPosition = mb_strpos($expression, $operator);
     $firstNumber = (int) trim(substr($expression, 0, $operatorPosition));
     $seconfNumber = (int) trim(substr($expression, $operatorPosition + 1, strlen($expression) - $operatorPosition));
