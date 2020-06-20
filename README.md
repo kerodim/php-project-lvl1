@@ -8,3 +8,7 @@
 
 Вызов brain-even
 [![asciicast](https://asciinema.org/a/H8f6H7H17MMHZh6Byz5ofrjdc.svg)](https://asciinema.org/a/H8f6H7H17MMHZh6Byz5ofrjdc)
+
+Вызовы brain-calc
+[![asciicast](https://asciinema.org/a/l8TQRMfclRmOBeCaR6cQ1goW0.svg)](https://asciinema.org/a/l8TQRMfclRmOBeCaR6cQ1goW0)
+[![asciicast](https://asciinema.org/a/Q4ZE04aQUrafOnn6jQurUBsdL.svg)](https://asciinema.org/a/Q4ZE04aQUrafOnn6jQurUBsdL)
