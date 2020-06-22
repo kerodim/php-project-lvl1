@@ -6,9 +6,13 @@
 Установка пакета
 [![asciicast](https://asciinema.org/a/2aG2jcb4QQnuNkhysNsuLFIGB.svg)](https://asciinema.org/a/2aG2jcb4QQnuNkhysNsuLFIGB)
 
-Вызов brain-even
+Игра: "Проверка на чётность"
 [![asciicast](https://asciinema.org/a/H8f6H7H17MMHZh6Byz5ofrjdc.svg)](https://asciinema.org/a/H8f6H7H17MMHZh6Byz5ofrjdc)
 
-Вызовы brain-calc
+Игра: "Калькулятор"
 [![asciicast](https://asciinema.org/a/l8TQRMfclRmOBeCaR6cQ1goW0.svg)](https://asciinema.org/a/l8TQRMfclRmOBeCaR6cQ1goW0)
 [![asciicast](https://asciinema.org/a/Q4ZE04aQUrafOnn6jQurUBsdL.svg)](https://asciinema.org/a/Q4ZE04aQUrafOnn6jQurUBsdL)
+
+Игра: "Наибольший общий делитель"
+[![asciicast](https://asciinema.org/a/AeYSqwHCNBG1ULJDl1EqxpKzH.svg)](https://asciinema.org/a/AeYSqwHCNBG1ULJDl1EqxpKzH)
+[![asciicast](https://asciinema.org/a/Kkd3pONgZbOjjjBvN9HWAXQhX.svg)](https://asciinema.org/a/Kkd3pONgZbOjjjBvN9HWAXQhX)
