@@ -8,6 +8,8 @@ use function BrainGames\Games\Even\generationRandomNumber;
 use function BrainGames\Games\Even\isEven;
 use function BrainGames\Games\Calc\generationMathExpression;
 use function BrainGames\Games\Calc\calculation;
+use function BrainGames\Games\GreatestCommonFactor\generationTwoRandomNumbers;
+use function BrainGames\Games\GreatestCommonFactor\calculationGCD;
 
 function run($game)
 {
@@ -27,6 +29,10 @@ function run($game)
             case 'brain-calc':
                 $question = generationMathExpression();
                 $correctAnswer = calculation($question);
+                break;
+            case 'brain-gcd':
+                $question = generationTwoRandomNumbers();
+                $correctAnswer = calculationGCD($question);
                 break;
             default:
                 throw new \Error("Unknown game: '{$game}'!");

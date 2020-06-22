@@ -24,7 +24,7 @@ function calculation($expression)
     }
     $operatorPosition = mb_strpos($expression, $operator);
     $firstNumber = (int) trim(substr($expression, 0, $operatorPosition));
-    $seconfNumber = (int) trim(substr($expression, $operatorPosition + 1, strlen($expression) - $operatorPosition));
+    $seconfNumber = (int) trim(substr($expression, ($operatorPosition + 1) - strlen($expression)));
     switch ($operator) {
         case '+':
             $correctAnswer = $firstNumber + $seconfNumber;
