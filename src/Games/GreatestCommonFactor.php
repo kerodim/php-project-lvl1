@@ -2,6 +2,11 @@
 
 namespace Braingames\Games\GreatestCommonFactor;
 
+function showTaskToPlayerGCD()
+{
+    return 'What is the result of the expression?';
+}
+
 function generationTwoRandomNumbers()
 {
     return (string) rand(1, 100) . ' ' . (string) rand(1, 100);

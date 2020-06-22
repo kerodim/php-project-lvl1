@@ -2,6 +2,11 @@
 
 namespace BrainGames\Games\Calc;
 
+function showTaskToPlayerCalc()
+{
+    return 'Find the greatest common divisor of given numbers.';
+}
+
 function generationMathExpression()
 {
     $firstNumber = (string) rand(1, 100);
