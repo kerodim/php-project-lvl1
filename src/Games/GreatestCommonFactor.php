@@ -4,7 +4,7 @@ namespace Braingames\Games\GreatestCommonFactor;
 
 function showTaskToPlayerGCD()
 {
-    return 'What is the result of the expression?';
+    return 'Find the greatest common divisor of given numbers.';
 }
 
 function generationTwoRandomNumbers()

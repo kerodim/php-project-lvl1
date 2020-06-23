@@ -4,7 +4,7 @@ namespace BrainGames\Games\Calc;
 
 function showTaskToPlayerCalc()
 {
-    return 'Find the greatest common divisor of given numbers.';
+    return 'What is the result of the expression?';
 }
 
 function generationMathExpression()
