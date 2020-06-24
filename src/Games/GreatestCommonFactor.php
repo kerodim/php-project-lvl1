@@ -25,10 +25,10 @@ function calculationGCD($numbers)
         $lowerNumber = $firstNumber;
     }
     $remainder = $greaterNumber % $lowerNumber;
-    while ($remainder > 0) {
+    while ($remainder !== 0) {
         $greaterNumber = $lowerNumber;
         $lowerNumber = $remainder;
         $remainder = $greaterNumber % $lowerNumber;
     }
-    return $lowerNumber;
+    return (string) $lowerNumber;
 }

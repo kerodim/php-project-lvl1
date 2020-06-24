@@ -16,38 +16,52 @@ use function BrainGames\Games\GreatestCommonFactor\calculationGCD;
 
 function run($game)
 {
+
+    line('Welcome to the Brain Games!');
     switch ($game) {
         case 'brain-even':
             $taskToPlayer = showTaskToPlayerEven();
-            $question = generationRandomNumber();
-            $correctAnswer = isEven($question);
             break;
         case 'brain-calc':
             $taskToPlayer = showTaskToPlayerCalc();
-            $question = generationMathExpression();
-            $correctAnswer = calculation($question);
             break;
         case 'brain-gcd':
             $taskToPlayer = showTaskToPlayerGCD();
-            $question = generationTwoRandomNumbers();
-            $correctAnswer = calculationGCD($question);
             break;
         default:
             throw new \Error("Unknown game: '{$game}'!");
     }
-    line('Welcome to the Brain Games!');
     line($taskToPlayer);
     line('');
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
     line('');
-    $raunds = 3;
-    for ($raunds; $raunds >= 1;) {
+    $round = 1;
+    for ($round; $round <= 3;) {
+        switch ($game) {
+            case 'brain-even':
+                $question = generationRandomNumber();
+                $correctAnswer = isEven($question);
+                break;
+            case 'brain-calc':
+                $question = generationMathExpression();
+                $correctAnswer = calculation($question);
+                break;
+            case 'brain-gcd':
+                $question = generationTwoRandomNumbers();
+                $correctAnswer = calculationGCD($question);
+                break;
+            default:
+                throw new \Error("Unknown game: '{$game}'!");
+        }
         line('Question: ' . $question);
         $userAnswer = prompt('Your answer');
-        if ($userAnswer == $correctAnswer) {
+        # var_dump($userAnswer);
+        # $correctAnswer = (string) $correctAnswer;
+        # var_dump($correctAnswer);
+        if ($userAnswer === $correctAnswer) {
             line('Correct!');
-            $raunds = $raunds - 1;
+            $round = $round + 1;
         } else {
             line("'" . $userAnswer . "' is wrong answer ;(. Correct answer was '" . $correctAnswer . "'.");
             line("Let's try again, " . $name . '!');

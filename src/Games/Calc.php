@@ -43,5 +43,5 @@ function calculation($expression)
         default:
             throw new \Error("Unknown operator: '{$operator}'!");
     }
-    return $correctAnswer;
+    return (string) $correctAnswer;
 }
