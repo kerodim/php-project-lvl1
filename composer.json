@@ -3,7 +3,8 @@
     "bin": [
         "bin/brain-even",
         "bin/brain-calc",
-        "bin/brain-gcd"
+        "bin/brain-gcd",
+        "bin/brain-progression"
     ],
     "authors": [
         {
@@ -21,7 +22,8 @@
              "src/Cli.php",
              "src/Games/Even.php",
              "src/Games/Calc.php",
-             "src/Games/GreatestCommonFactor.php"
+             "src/Games/GreatestCommonFactor.php",
+             "src/Games/Progression.php"
         ]
     },
     "require": {
