@@ -15,7 +15,6 @@ use function BrainGames\Games\GreatestCommonFactor\generationTwoRandomNumbers;
 use function BrainGames\Games\GreatestCommonFactor\calculationGCD;
 use function Braingames\Games\Progression\showTaskToPlayerProgression;
 use function Braingames\Games\Progression\generationArithmeticProgression;
-use function Braingames\Games\Progression\findMissingNumber;
 
 function run($game)
 {
@@ -58,8 +57,9 @@ function run($game)
                 $correctAnswer = calculationGCD($question);
                 break;
             case 'brain-progression':
-                $question = generationArithmeticProgression();
-                $correctAnswer = findMissingNumber($question);
+                $result = generationArithmeticProgression();
+                $question = $result[0];
+                $correctAnswer = $result[1];
                 break;
             default:
                 throw new \Error("Unknown game: '{$game}'!");
