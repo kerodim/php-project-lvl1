@@ -15,6 +15,9 @@ use function BrainGames\Games\GreatestCommonFactor\generationTwoRandomNumbers;
 use function BrainGames\Games\GreatestCommonFactor\calculationGCD;
 use function Braingames\Games\Progression\showTaskToPlayerProgression;
 use function Braingames\Games\Progression\generationArithmeticProgression;
+use function BrainGames\Games\Prime\showTaskToPlayerPrime;
+use function BrainGames\Games\Prime\generationRandomNumber as generationRandomNumberPrime;
+use function BrainGames\Games\Prime\isPrime;
 
 function run($game)
 {
@@ -32,6 +35,9 @@ function run($game)
             break;
         case 'brain-progression':
             $taskToPlayer = showTaskToPlayerProgression();
+            break;
+        case 'brain-prime':
+            $taskToPlayer = showTaskToPlayerPrime();
             break;
         default:
             throw new \Error("Unknown game: '{$game}'!");
@@ -60,6 +66,10 @@ function run($game)
                 $result = generationArithmeticProgression();
                 $question = $result[0];
                 $correctAnswer = $result[1];
+                break;
+            case 'brain-prime':
+                $question = generationRandomNumberPrime();
+                $correctAnswer = isPrime($question);
                 break;
             default:
                 throw new \Error("Unknown game: '{$game}'!");
