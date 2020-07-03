@@ -9,7 +9,7 @@ function showTaskToPlayerPrime()
 
 function generationRandomNumber()
 {
-    return rand(2, 3);
+    return rand(1, 100);
 }
 
 function isPrime($number)
