@@ -13,5 +13,7 @@ if (file_exists($autoloadPath1)) {
 }
 
 use function BrainGames\Cli\run;
+use function Braingames\Games\GreatestCommonFactor\gcd;
 
-run('brain-gcd');
+# run('brain-gcd');
+gcd();
