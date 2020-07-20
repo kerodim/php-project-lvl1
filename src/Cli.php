@@ -4,6 +4,8 @@ namespace BrainGames\Cli;
 
 use function Cli\line;
 use function Cli\prompt;
+
+/*
 use function BrainGames\Games\Even\showTaskToPlayerEven;
 use function BrainGames\Games\Even\generationRandomNumber;
 use function BrainGames\Games\Even\isEven;
@@ -18,7 +20,7 @@ use function Braingames\Games\Progression\generationArithmeticProgression;
 use function BrainGames\Games\Prime\showTaskToPlayerPrime;
 use function BrainGames\Games\Prime\generationRandomNumber as generationRandomNumberPrime;
 use function BrainGames\Games\Prime\isPrime;
-
+*/
 /*
 function run($game)
 {
