@@ -101,7 +101,7 @@ function gameGreeting($gameDescription)
     return $playerName;
 }
 
-function gameQuestions($playerName, $question, $correctAnswer)
+function isUserAnswerTrue($playerName, $question, $correctAnswer)
 {
     line('Question: ' . $question);
     $userAnswer = prompt('Your answer');

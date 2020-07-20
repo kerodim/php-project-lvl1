@@ -13,5 +13,7 @@ if (file_exists($autoloadPath1)) {
 }
 
 use function BrainGames\Cli\run;
+use function BrainGames\Games\Calc\calc;
 
-run('brain-calc');
+# run('brain-calc');
+calc();

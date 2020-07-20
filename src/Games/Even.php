@@ -3,7 +3,7 @@
 namespace BrainGames\Games\Even;
 
 use function BrainGames\Cli\gameGreeting;
-use function BrainGames\Cli\gameQuestions;
+use function BrainGames\Cli\isUserAnswerTrue;
 use function BrainGames\Cli\gameEnding;
 
 /*
@@ -37,7 +37,7 @@ function even()
         } else {
             $correctAnswer = 'no';
         }
-        if (gameQuestions($playerName, $number, $correctAnswer)) {
+        if (isUserAnswerTrue($playerName, $number, $correctAnswer)) {
             $round += 1;
         } else {
             $round = 1;
