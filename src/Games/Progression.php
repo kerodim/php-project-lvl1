@@ -35,7 +35,7 @@ function generationArithmeticProgression()
     return $result;
 }
 
-function prime()
+function progression()
 {
     $gameDescription = 'What number is missing in the progression?';
     $playerName = gameGreeting($gameDescription);

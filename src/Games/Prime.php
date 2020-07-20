@@ -2,6 +2,11 @@
 
 namespace Braingames\Games\Prime;
 
+use function BrainGames\Cli\gameGreeting;
+use function BrainGames\Cli\isUserAnswerTrue;
+use function BrainGames\Cli\gameEnding;
+
+/*
 function showTaskToPlayerPrime()
 {
     return 'Answer "yes" if given number is prime. Otherwise answer "no".';
@@ -24,4 +29,30 @@ function isPrime($number)
         }
     }
     return $correctAnswer;
+}
+*/
+
+function prime()
+{
+    $gameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+    $playerName = gameGreeting($gameDescription);
+    for ($round = 1; $round <= 3;) {
+        $number = rand(1, 100);
+        $correctAnswer = "yes";
+        if ($number === 1) {
+            $correctAnswer = "no";
+        }
+        for ($index = 2; $index <= sqrt($number); $index++) {
+            if ($number % $index === 0) {
+                $correctAnswer = "no";
+                break;
+            }
+        }
+        if (isUserAnswerTrue($playerName, $number, $correctAnswer)) {
+            $round += 1;
+        } else {
+            $round = 1;
+        }
+    }
+    gameEnding($playerName);
 }
