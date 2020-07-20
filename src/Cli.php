@@ -19,6 +19,7 @@ use function BrainGames\Games\Prime\showTaskToPlayerPrime;
 use function BrainGames\Games\Prime\generationRandomNumber as generationRandomNumberPrime;
 use function BrainGames\Games\Prime\isPrime;
 
+/*
 function run($game)
 {
 
@@ -84,4 +85,35 @@ function run($game)
             line("Let's try again, " . $name . '!');
         }
     }
+}
+*/
+
+function gameGreeting($gameDescription)
+{
+    line('Welcome to the Brain Games!');
+    line($gameDescription);
+    line('');
+    $playerName = prompt('May I have your name?');
+    line("Hello, %s!", $playerName);
+    line('');
+    return $playerName;
+}
+
+function gameQuestions($playerName, $question, $correctAnswer)
+{
+    line('Question: ' . $question);
+    $userAnswer = prompt('Your answer');
+    if ($userAnswer === $correctAnswer) {
+        line('Correct!');
+        return true;
+    } else {
+        line("'" . $userAnswer . "' is wrong answer ;(. Correct answer was '" . $correctAnswer . "'.");
+        line("Let's try again, " . $playerName . '!');
+        return false;
+    }
+}
+
+function gameEnding($playerName)
+{
+    line("Congratulations, %s!", $playerName);
 }
