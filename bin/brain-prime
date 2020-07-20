@@ -12,7 +12,7 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 
-use function BrainGames\Cli\run;
+# use function BrainGames\Cli\run;
 use function Braingames\Games\Prime\prime;
 
 # run('brain-prime');

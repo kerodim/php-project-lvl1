@@ -6,6 +6,7 @@ use function BrainGames\Cli\gameGreeting;
 use function BrainGames\Cli\isUserAnswerTrue;
 use function BrainGames\Cli\gameEnding;
 
+/*
 function showTaskToPlayerProgression()
 {
     return 'What number is missing in the progression?';
@@ -34,6 +35,7 @@ function generationArithmeticProgression()
     $result = [$progression, $correctAnswer];
     return $result;
 }
+*/
 
 function progression()
 {
