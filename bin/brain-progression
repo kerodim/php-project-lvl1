@@ -13,5 +13,7 @@ if (file_exists($autoloadPath1)) {
 }
 
 use function BrainGames\Cli\run;
+use function Braingames\Games\Progression\progression;
 
-run('brain-progression');
+# run('brain-progression');
+progression();
