@@ -65,18 +65,18 @@ function calc()
         $expression = (string) $firstNumber . ' ' . $operation . ' ' . (string) $seconfNumber;
         switch ($operation) {
             case '+':
-                $correctAnswer = (string) ($firstNumber + $seconfNumber);
+                $expressionValue = (string) ($firstNumber + $seconfNumber);
                 break;
             case '-':
-                $correctAnswer = (string) ($firstNumber - $seconfNumber);
+                $expressionValue = (string) ($firstNumber - $seconfNumber);
                 break;
             case '*':
-                $correctAnswer = (string) ($firstNumber * $seconfNumber);
+                $expressionValue = (string) ($firstNumber * $seconfNumber);
                 break;
             default:
                 throw new \Error("Unknown operator: '{$operation}'!");
         }
-        if (isUserAnswerTrue($playerName, $expression, $correctAnswer)) {
+        if (isUserAnswerTrue($playerName, $expression, $expressionValue)) {
             $round += 1;
         } else {
             $round = 1;
