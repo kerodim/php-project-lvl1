@@ -90,6 +90,7 @@ function run($game)
 }
 */
 
+/*
 function gameGreeting($gameDescription)
 {
     line('Welcome to the Brain Games!');
@@ -119,3 +120,57 @@ function gameEnding($playerName)
 {
     line("Congratulations, %s!", $playerName);
 }
+*/
+
+function engine($gameDescription, $gameData, $maxCorrectAnswerNumber, $separator)
+{
+    line('Welcome to the Brain Games!');
+    line($gameDescription);
+    line('');
+    $playerName = prompt('May I have your name?');
+    line("Hello, %s!", $playerName);
+    line('');
+    for ($index = 0; $index < $maxCorrectAnswerNumber; $index++) {
+        #$separator = ' ';
+        $roundData = $gameData[$index];
+        $separatorPosition = strripos($roundData, $separator);
+        $correctAnswer = substr($roundData, $separatorPosition + strlen($separator));
+        $question = substr($roundData, 0, strlen($roundData) - strlen($correctAnswer) - strlen($separator));
+        line('Question: %s', $question);
+        $userAnswer = prompt('Your answer');
+        if ($userAnswer === $correctAnswer) {
+            line('Correct!');
+        } else {
+            line("'%s' is wrong answer ;(. Correct answer was '%s'.", $userAnswer, $correctAnswer);
+            line("Let's try again, %s!", $playerName);
+            break;
+        }
+        if ($index === $maxCorrectAnswerNumber - 1) {
+            line("Congratulations, %s!", $playerName);
+        }
+    }
+}
+
+/*
+function run_while($gameDescription, $maxCorrectAnswerNumber, $gameData)
+{
+    line('Welcome to the Brain Games!');
+    line($gameDescription);
+    line('');
+    $playerName = prompt('May I have your name?');
+    line("Hello, %s!", $playerName);
+    line('');
+    $index = 0;
+    $separator = ' ';
+    $roundData = $gameData[$index];
+    $separatorPosition = strripos($roundData, $separator);
+    $length = strlen($roundData);
+    $correctAnswer = substr($roundData, $separatorPosition + 1);
+    $question = substr($roundData, 0, $length - strlen($correctAnswer) - strlen($separator));
+    line('Question: %s', $question);
+    $userAnswer = prompt('Your answer');
+    while ($userAnswer === $correctAnswer) {
+        line('Correct!');
+    }
+}
+*/
