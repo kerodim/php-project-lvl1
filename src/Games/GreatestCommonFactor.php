@@ -2,9 +2,10 @@
 
 namespace Braingames\Games\GreatestCommonFactor;
 
-use function BrainGames\Cli\gameGreeting;
-use function BrainGames\Cli\isUserAnswerTrue;
-use function BrainGames\Cli\gameEnding;
+#use function BrainGames\Cli\gameGreeting;
+#use function BrainGames\Cli\isUserAnswerTrue;
+#use function BrainGames\Cli\gameEnding;
+use function BrainGames\Cli\engine;
 
 /*
 function showTaskToPlayerGCD()
@@ -38,8 +39,8 @@ function calculationGCD($numbers)
     return (string) $lowerNumber;
 }
 */
-
-function gcd()
+/*
+function gcd_old()
 {
     $gameDescription = 'Find the greatest common divisor of given numbers.';
     $playerName = gameGreeting($gameDescription);
@@ -68,4 +69,33 @@ function gcd()
         }
     }
     gameEnding($playerName);
+}
+*/
+
+function gcd()
+{
+    $gameDescription = 'Find the greatest common divisor of given numbers.';
+    $gameData = [];
+    $maxCorrectAnswerNumber = 3;
+    $separator = ': ';
+    for ($index = 0; $index < $maxCorrectAnswerNumber; $index++) {
+        $firstNumber = rand(1, 100);
+        $seconfNumber = rand(1, 100);
+        $givenNumbers = (string) $firstNumber . ' ' . (string) $seconfNumber;
+        if ($firstNumber >= $seconfNumber) {
+            $greaterNumber = $firstNumber;
+            $lowerNumber = $seconfNumber;
+        } else {
+            $greaterNumber = $seconfNumber;
+            $lowerNumber = $firstNumber;
+        }
+        $remainder = $greaterNumber % $lowerNumber;
+        while ($remainder !== 0) {
+            $greaterNumber = $lowerNumber;
+            $lowerNumber = $remainder;
+            $remainder = $greaterNumber % $lowerNumber;
+        }
+        $gameData[$index] = $givenNumbers . $separator . (string) $lowerNumber;
+    }
+    engine($gameDescription, $gameData, $maxCorrectAnswerNumber, $separator);
 }
