@@ -13,8 +13,6 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 
-# use function BrainGames\Cli\run;
 use function Braingames\Games\Progression\progression;
 
-# run('brain-progression');
 progression();

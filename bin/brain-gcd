@@ -12,8 +12,6 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 
-# use function BrainGames\Cli\run;
 use function Braingames\Games\GreatestCommonFactor\gcd;
 
-# run('brain-gcd');
 gcd();
