@@ -32,7 +32,7 @@ function isPrime($number)
     return $correctAnswer;
 }
 */
-
+/*
 function prime_old()
 {
     $gameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
@@ -57,6 +57,8 @@ function prime_old()
     }
     gameEnding($playerName);
 }
+*/
+
 function isPrime($number)
 {
     $result = true;
