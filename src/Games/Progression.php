@@ -15,20 +15,25 @@ function progression()
         $progressionStep = rand(-5, 5);
         $progressionLehgth = 10;
         $unknownMemberNumber = rand(1, $progressionLehgth);
-        $progression = '';
+        #$progression = '';
+        $progression = [];
         for ($count = 1; $count <= $progressionLehgth; $count++) {
             if ($count === $unknownMemberNumber) {
-                $progression = $progression . '..';
+                $progression[] = '..';
                 $missingMember = (string) $progressionMember;
             } else {
-                $progression = $progression . (string) $progressionMember;
+                $progression[] = (string) $progressionMember;
             }
+            /*
             if ($count < $progressionLehgth) {
-                $progression = $progression . ' ';
+                $progression[] = ' ';
             }
+            */
+            $progressionString = implode(' ', $progression);
             $progressionMember = $progressionMember + $progressionStep;
         }
-        $gameData[$index] = $progression . $separator . $missingMember;
+        $gameData[$index] = $progressionString . $separator . $missingMember;
     }
+    #var_dump($gameData);
     engine($gameDescription, $gameData, $maxCorrectAnswerNumber, $separator);
 }

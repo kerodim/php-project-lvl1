@@ -30,6 +30,5 @@ function prime()
         isPrime($number) ? $correctAnswer = 'yes' : $correctAnswer = 'no';
         $gameData[$index] = $number . $separator . $correctAnswer;
     }
-    var_dump($gameData);
     engine($gameDescription, $gameData, $maxCorrectAnswerNumber, $separator);
 }
