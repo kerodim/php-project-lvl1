@@ -14,22 +14,22 @@ function calculateExpression()
         $seconfNumber = rand(1, 100);
         $operations = ['+', '-', '*'];
         $numberOfOperations = count($operations) - 1;
-        $operation = $listOfOperation[rand(0, $numberOfOperations)];
+        $operation = $operations[rand(0, $numberOfOperations)];
         $expression = (string) $firstNumber . ' ' . $operation . ' ' . (string) $seconfNumber;
         switch ($operation) {
             case '+':
-                $expressionValue = (string) ($firstNumber + $seconfNumber);
+                $expressionValue = $firstNumber + $seconfNumber;
                 break;
             case '-':
-                $expressionValue = (string) ($firstNumber - $seconfNumber);
+                $expressionValue = $firstNumber - $seconfNumber;
                 break;
             case '*':
-                $expressionValue = (string) ($firstNumber * $seconfNumber);
+                $expressionValue = $firstNumber * $seconfNumber;
                 break;
             default:
                 throw new \Error("Unknown operator: '{$operation}'!");
         }
-        $gameData[$index] = $expression . ' ' . $expressionValue;
+        $gameData[$index] = $expression . ' ' . (string) $expressionValue;
     }
     runEngine($gameDescription, $gameData, $maxCorrectAnswerNumber);
 }
