@@ -2,7 +2,7 @@
 
 namespace Braingames\Games\GreatestCommonFactor;
 
-use function BrainGames\Cli\engine;
+use function BrainGames\Cli\runEngine;
 
 function calculateGcd()
 {
@@ -29,5 +29,5 @@ function calculateGcd()
         }
         $gameData[$index] = $givenNumbers . $separator . (string) $lowerNumber;
     }
-    engine($gameDescription, $gameData, $maxCorrectAnswerNumber, $separator);
+    runEngine($gameDescription, $gameData, $maxCorrectAnswerNumber, $separator);
 }

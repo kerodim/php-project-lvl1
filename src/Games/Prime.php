@@ -2,7 +2,7 @@
 
 namespace Braingames\Games\Prime;
 
-use function BrainGames\Cli\engine;
+use function BrainGames\Cli\runEngine;
 
 function isPrime($number)
 {
@@ -30,5 +30,5 @@ function definitionPrimeNumber()
         isPrime($number) ? $correctAnswer = 'yes' : $correctAnswer = 'no';
         $gameData[$index] = $number . $separator . $correctAnswer;
     }
-    engine($gameDescription, $gameData, $maxCorrectAnswerNumber, $separator);
+    enginerunEngine($gameDescription, $gameData, $maxCorrectAnswerNumber, $separator);
 }

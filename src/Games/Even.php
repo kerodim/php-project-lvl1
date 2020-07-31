@@ -2,7 +2,7 @@
 
 namespace BrainGames\Games\Even;
 
-use function BrainGames\Cli\engine;
+use function BrainGames\Cli\runEngine;
 
 function checkEven()
 {
@@ -15,5 +15,5 @@ function checkEven()
         $number % 2 === 0 ? $correctAnswer = 'yes' : $correctAnswer = 'no';
         $gameData[$index] = (string) $number . $separator . $correctAnswer;
     }
-    engine($gameDescription, $gameData, $maxCorrectAnswerNumber, $separator);
+    runEngine($gameDescription, $gameData, $maxCorrectAnswerNumber, $separator);
 }

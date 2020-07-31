@@ -5,7 +5,7 @@ namespace BrainGames\Cli;
 use function Cli\line;
 use function Cli\prompt;
 
-function engine($gameDescription, $gameData, $maxCorrectAnswerNumber, $separator)
+function runEngine($gameDescription, $gameData, $maxCorrectAnswerNumber, $separator)
 {
     line('Welcome to the Brain Games!');
     line($gameDescription);

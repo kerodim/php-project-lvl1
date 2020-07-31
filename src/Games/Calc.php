@@ -2,7 +2,7 @@
 
 namespace BrainGames\Games\Calc;
 
-use function BrainGames\Cli\engine;
+use function BrainGames\Cli\runEngine;
 
 function calculateExpression()
 {
@@ -32,5 +32,5 @@ function calculateExpression()
         }
         $gameData[$index] = $expression . $separator . $expressionValue;
     }
-    engine($gameDescription, $gameData, $maxCorrectAnswerNumber, $separator);
+    runEngine($gameDescription, $gameData, $maxCorrectAnswerNumber, $separator);
 }
