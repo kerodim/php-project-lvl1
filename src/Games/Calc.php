@@ -9,7 +9,6 @@ function calculateExpression()
     $gameDescription = 'What is the result of the expression?';
     $gameData = [];
     $maxCorrectAnswerNumber = 3;
-    $separator = ': ';
     for ($index = 0; $index < $maxCorrectAnswerNumber; $index++) {
         $firstNumber = rand(1, 100);
         $seconfNumber = rand(1, 100);
@@ -30,7 +29,7 @@ function calculateExpression()
             default:
                 throw new \Error("Unknown operator: '{$operation}'!");
         }
-        $gameData[$index] = $expression . $separator . $expressionValue;
+        $gameData[$index] = $expression . ' ' . $expressionValue;
     }
-    runEngine($gameDescription, $gameData, $maxCorrectAnswerNumber, $separator);
+    runEngine($gameDescription, $gameData, $maxCorrectAnswerNumber);
 }

@@ -9,7 +9,6 @@ function calculateGcd()
     $gameDescription = 'Find the greatest common divisor of given numbers.';
     $gameData = [];
     $maxCorrectAnswerNumber = 3;
-    $separator = ': ';
     for ($index = 0; $index < $maxCorrectAnswerNumber; $index++) {
         $firstNumber = rand(1, 100);
         $seconfNumber = rand(1, 100);
@@ -27,7 +26,7 @@ function calculateGcd()
             $lowerNumber = $remainder;
             $remainder = $greaterNumber % $lowerNumber;
         }
-        $gameData[$index] = $givenNumbers . $separator . (string) $lowerNumber;
+        $gameData[$index] = $givenNumbers . ' ' . (string) $lowerNumber;
     }
-    runEngine($gameDescription, $gameData, $maxCorrectAnswerNumber, $separator);
+    runEngine($gameDescription, $gameData, $maxCorrectAnswerNumber);
 }

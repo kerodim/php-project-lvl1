@@ -24,11 +24,10 @@ function definitionPrimeNumber()
     $gameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
     $gameData = [];
     $maxCorrectAnswerNumber = 3;
-    $separator = ': ';
     for ($index = 0; $index < $maxCorrectAnswerNumber; $index++) {
         $number = rand(1, 100);
         isPrime($number) ? $correctAnswer = 'yes' : $correctAnswer = 'no';
-        $gameData[$index] = $number . $separator . $correctAnswer;
+        $gameData[$index] = $number . ' ' . $correctAnswer;
     }
-    enginerunEngine($gameDescription, $gameData, $maxCorrectAnswerNumber, $separator);
+    runEngine($gameDescription, $gameData, $maxCorrectAnswerNumber);
 }

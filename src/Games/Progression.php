@@ -9,7 +9,6 @@ function findProgressionMember()
     $gameDescription = 'What number is missing in the progression?';
     $gameData = [];
     $maxCorrectAnswerNumber = 3;
-    $separator = ': ';
     for ($index = 0; $index < $maxCorrectAnswerNumber; $index++) {
         $progressionMember = rand(1, 100);
         $progressionStep = rand(-5, 5);
@@ -26,7 +25,7 @@ function findProgressionMember()
             $progressionString = implode(' ', $progression);
             $progressionMember = $progressionMember + $progressionStep;
         }
-        $gameData[$index] = $progressionString . $separator . $missingMember;
+        $gameData[$index] = $progressionString . ' ' . $missingMember;
     }
-    runEngine($gameDescription, $gameData, $maxCorrectAnswerNumber, $separator);
+    runEngine($gameDescription, $gameData, $maxCorrectAnswerNumber);
 }
