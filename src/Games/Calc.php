@@ -12,8 +12,8 @@ function calculateExpression()
     for ($index = 0; $index < $maxCorrectAnswerNumber; $index++) {
         $firstNumber = rand(1, 100);
         $seconfNumber = rand(1, 100);
-        $listOfOperation = ['+', '-', '*'];
-        $numberOfOperations = count($listOfOperation) - 1;
+        $operations = ['+', '-', '*'];
+        $numberOfOperations = count($operations) - 1;
         $operation = $listOfOperation[rand(0, $numberOfOperations)];
         $expression = (string) $firstNumber . ' ' . $operation . ' ' . (string) $seconfNumber;
         switch ($operation) {
