@@ -19,7 +19,7 @@ function isPrime($number)
     return $result;
 }
 
-function prime()
+function definitionPrimeNumber()
 {
     $gameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
     $gameData = [];

@@ -4,7 +4,7 @@ namespace BrainGames\Games\Calc;
 
 use function BrainGames\Cli\engine;
 
-function calc()
+function calculateExpression()
 {
     $gameDescription = 'What is the result of the expression?';
     $gameData = [];
