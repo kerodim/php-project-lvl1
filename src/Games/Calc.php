@@ -13,8 +13,8 @@ function calculateExpression()
         $firstNumber = rand(1, 100);
         $seconfNumber = rand(1, 100);
         $operations = ['+', '-', '*'];
-        $numberOfOperations = count($operations) - 1;
-        $operation = $operations[rand(0, $numberOfOperations)];
+        $numberOfOperations = count($operations);
+        $operation = $operations[rand(0, $numberOfOperations - 1)];
         $expression = (string) $firstNumber . ' ' . $operation . ' ' . (string) $seconfNumber;
         switch ($operation) {
             case '+':
