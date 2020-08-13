@@ -14,17 +14,15 @@ function findProgressionMember()
         $progressionStep = rand(-5, 5);
         $progressionLehgth = 10;
         $unknownMemberNumber = rand(1, $progressionLehgth);
+        $missingMember = $progressionMember + $progressionStep * $unknownMemberNumber;
         $progression = [];
         for ($count = 1; $count <= $progressionLehgth; $count++) {
-            if ($count === $unknownMemberNumber) {
-                $progression[] = '..';
-                $missingMember = (string) $progressionMember;
-            } else {
-                $progression[] = (string) $progressionMember;
-            }
-            $progressionString = implode(' ', $progression);
-            $progressionMember = $progressionMember + $progressionStep;
+            $progression[] = $progressionMember + $progressionStep * $count;
         }
+        $progression[$unknownMemberNumber - 1] = '..';
+        $progressionString = implode(' ', $progression);
+        var_dump($progressionString);
+        var_dump($missingMember);
         $gameData[$index] = $progressionString . ' ' . $missingMember;
     }
     runEngine($gameDescription, $gameData);
