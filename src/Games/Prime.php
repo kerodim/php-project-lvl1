@@ -6,17 +6,15 @@ use function BrainGames\Cli\runEngine;
 
 function isPrime($number)
 {
-    $result = true;
     if ($number === 1) {
-        $result = false;
+        return false;
     }
     for ($count = 2; $count <= sqrt($number); $count++) {
         if ($number % $count === 0) {
-            $result = false;
-            break;
+            return false;
         }
     }
-    return $result;
+    return true;
 }
 
 function definitionPrimeNumber()
