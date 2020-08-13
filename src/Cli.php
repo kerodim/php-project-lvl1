@@ -26,10 +26,8 @@ function runEngine($gameDescription, $gameData)
         } else {
             line("'%s' is wrong answer ;(. Correct answer was '%s'.", $userAnswer, $correctAnswer);
             line("Let's try again, %s!", $playerName);
-            break;
-        }
-        if ($index === $maxCorrectAnswerNumber - 1) {
-            line("Congratulations, %s!", $playerName);
+            return;
         }
     }
+    line("Congratulations, %s!", $playerName);
 }
