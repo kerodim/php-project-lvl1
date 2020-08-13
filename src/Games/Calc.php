@@ -8,8 +8,8 @@ function calculateExpression()
 {
     $gameDescription = 'What is the result of the expression?';
     $gameData = [];
-    $maxCorrectAnswerNumber = 3;
-    for ($index = 0; $index < $maxCorrectAnswerNumber; $index++) {
+    $gameDataSize = 3;
+    for ($index = 0; $index < $gameDataSize; $index++) {
         $firstNumber = rand(1, 100);
         $seconfNumber = rand(1, 100);
         $operations = ['+', '-', '*'];
@@ -31,5 +31,5 @@ function calculateExpression()
         }
         $gameData[$index] = $expression . ' ' . (string) $expressionValue;
     }
-    runEngine($gameDescription, $gameData, $maxCorrectAnswerNumber);
+    runEngine($gameDescription, $gameData);
 }
