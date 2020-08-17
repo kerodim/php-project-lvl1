@@ -18,7 +18,6 @@ function runEngine($gameDescription, $gameData)
     $playerName = prompt('May I have your name?');
     line("Hello, %s!", $playerName);
     line('');
-    $maxCorrectAnswerNumber = getMaxCorrectAnswerNumber();
     foreach ($gameData as $roundData) {
         $separatorPosition = strripos($roundData, ' ');
         $correctAnswer = substr($roundData, $separatorPosition + 1);
