@@ -5,10 +5,7 @@ namespace BrainGames\Cli;
 use function Cli\line;
 use function Cli\prompt;
 
-function getMaxCorrectAnswerNumber()
-{
-    return 3;
-}
+const ROUNDNUMBERS = 3;
 
 function runEngine($gameDescription, $gameData)
 {

@@ -5,6 +5,8 @@ namespace Braingames\Games\GreatestCommonFactor;
 use function BrainGames\Cli\runEngine;
 use function BrainGames\Cli\getMaxCorrectAnswerNumber;
 
+use const BrainGames\Cli\ROUNDNUMBERS;
+
 function findGreatestCommonDivisor($firstNumber, $secondNumber)
 {
     if ($firstNumber >= $secondNumber) {
@@ -27,8 +29,7 @@ function generateGcdGameData()
 {
     $gameDescription = 'Find the greatest common divisor of given numbers.';
     $gameData = [];
-    $gameDataSize = getMaxCorrectAnswerNumber();
-    for ($index = 0; $index < $gameDataSize; $index++) {
+    for ($index = 0; $index < ROUNDNUMBERS; $index++) {
         $firstNumber = rand(1, 100);
         $secondNumber = rand(1, 100);
         $givenNumbers = (string) $firstNumber . ' ' . (string) $secondNumber;

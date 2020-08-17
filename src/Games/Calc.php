@@ -5,12 +5,13 @@ namespace BrainGames\Games\Calc;
 use function BrainGames\Cli\runEngine;
 use function BrainGames\Cli\getMaxCorrectAnswerNumber;
 
+use const BrainGames\Cli\ROUNDNUMBERS;
+
 function generateCalGameData()
 {
     $gameDescription = 'What is the result of the expression?';
     $gameData = [];
-    $gameDataSize = getMaxCorrectAnswerNumber();
-    for ($index = 0; $index < $gameDataSize; $index++) {
+    for ($index = 0; $index < ROUNDNUMBERS; $index++) {
         $firstNumber = rand(1, 100);
         $secondNumber = rand(1, 100);
         $operations = ['+', '-', '*'];
