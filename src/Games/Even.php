@@ -10,9 +10,9 @@ function generateEvenGameData()
     $gameData = [];
     $gameDataSize = 3;
     for ($index = 0; $index < $gameDataSize; $index++) {
-        $number = rand(1, 100);
-        $number % 2 === 0 ? $correctAnswer = 'yes' : $correctAnswer = 'no';
-        $gameData[$index] = (string) $number . ' ' . $correctAnswer;
+        $gameQuestion = rand(1, 100);
+        $correctAnswer = $number % 2 === 0 ? 'yes' : 'no';
+        $gameData[$index] = (string) $gameQuestion . ' ' . $correctAnswer;
     }
     runEngine($gameDescription, $gameData);
 }

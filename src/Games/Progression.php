@@ -21,8 +21,6 @@ function generateProgressionGameData()
         }
         $progression[$unknownMemberNumber - 1] = '..';
         $progressionString = implode(' ', $progression);
-        var_dump($progressionString);
-        var_dump($missingMember);
         $gameData[$index] = $progressionString . ' ' . $missingMember;
     }
     runEngine($gameDescription, $gameData);
