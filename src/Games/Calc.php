@@ -11,20 +11,20 @@ function generateCalGameData()
     $gameDataSize = 3;
     for ($index = 0; $index < $gameDataSize; $index++) {
         $firstNumber = rand(1, 100);
-        $seconfNumber = rand(1, 100);
+        $secondNumber = rand(1, 100);
         $operations = ['+', '-', '*'];
         $numberOfOperations = count($operations);
         $operation = $operations[rand(0, $numberOfOperations - 1)];
-        $expression = (string) $firstNumber . ' ' . $operation . ' ' . (string) $seconfNumber;
+        $expression = (string) $firstNumber . ' ' . $operation . ' ' . (string) $secondNumber;
         switch ($operation) {
             case '+':
-                $expressionValue = $firstNumber + $seconfNumber;
+                $expressionValue = $firstNumber + $secondNumber;
                 break;
             case '-':
-                $expressionValue = $firstNumber - $seconfNumber;
+                $expressionValue = $firstNumber - $secondNumber;
                 break;
             case '*':
-                $expressionValue = $firstNumber * $seconfNumber;
+                $expressionValue = $firstNumber * $secondNumber;
                 break;
             default:
                 throw new \Error("Unknown operator: '{$operation}'!");

@@ -4,13 +4,13 @@ namespace Braingames\Games\GreatestCommonFactor;
 
 use function BrainGames\Cli\runEngine;
 
-function findGreatestCommonDivisor($firstNumber, $seconfNumber)
+function findGreatestCommonDivisor($firstNumber, $secondNumber)
 {
-    if ($firstNumber >= $seconfNumber) {
+    if ($firstNumber >= $secondNumber) {
         $greaterNumber = $firstNumber;
-        $lowerNumber = $seconfNumber;
+        $lowerNumber = $secondNumber;
     } else {
-        $greaterNumber = $seconfNumber;
+        $greaterNumber = $secondNumber;
         $lowerNumber = $firstNumber;
     }
     $remainder = $greaterNumber % $lowerNumber;
@@ -29,9 +29,9 @@ function generateGcdGameData()
     $gameDataSize = 3;
     for ($index = 0; $index < $gameDataSize; $index++) {
         $firstNumber = rand(1, 100);
-        $seconfNumber = rand(1, 100);
-        $givenNumbers = (string) $firstNumber . ' ' . (string) $seconfNumber;
-        $greatestCommonDivisor = findGreatestCommonDivisor($firstNumber, $seconfNumber);
+        $secondNumber = rand(1, 100);
+        $givenNumbers = (string) $firstNumber . ' ' . (string) $secondNumber;
+        $greatestCommonDivisor = findGreatestCommonDivisor($firstNumber, $secondNumber);
         $gameData[$index] = $givenNumbers . ' ' . (string) $greatestCommonDivisor;
     }
     runEngine($gameDescription, $gameData);
