@@ -3,12 +3,13 @@
 namespace Braingames\Games\Progression;
 
 use function BrainGames\Cli\runEngine;
+use function BrainGames\Cli\getMaxCorrectAnswerNumber;
 
 function generateProgressionGameData()
 {
     $gameDescription = 'What number is missing in the progression?';
     $gameData = [];
-    $gameDataSize = 3;
+    $gameDataSize = getMaxCorrectAnswerNumber();
     for ($index = 0; $index < $gameDataSize; $index++) {
         $progressionMember = rand(1, 100);
         $progressionStep = rand(-5, 5);
