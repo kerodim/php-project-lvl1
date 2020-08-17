@@ -24,7 +24,7 @@ function generatePrimeGameData()
     $gameDataSize = 3;
     for ($index = 0; $index < $gameDataSize; $index++) {
         $gameQuestion = rand(1, 100);
-        $correctAnswer = isPrime($number) ? 'yes' : 'no';
+        $correctAnswer = isPrime($gameQuestion) ? 'yes' : 'no';
         $gameData[$index] = $gameQuestion . ' ' . $correctAnswer;
     }
     runEngine($gameDescription, $gameData);

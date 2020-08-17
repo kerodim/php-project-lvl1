@@ -5,6 +5,11 @@ namespace BrainGames\Cli;
 use function Cli\line;
 use function Cli\prompt;
 
+function getMaxCorrectAnswerNumber()
+{
+    return 3;
+}
+
 function runEngine($gameDescription, $gameData)
 {
     line('Welcome to the Brain Games!');
@@ -13,7 +18,7 @@ function runEngine($gameDescription, $gameData)
     $playerName = prompt('May I have your name?');
     line("Hello, %s!", $playerName);
     line('');
-    $maxCorrectAnswerNumber = 3;
+    $maxCorrectAnswerNumber = getMaxCorrectAnswerNumber();
     for ($index = 0; $index < $maxCorrectAnswerNumber; $index++) {
         $roundData = $gameData[$index];
         $separatorPosition = strripos($roundData, ' ');
