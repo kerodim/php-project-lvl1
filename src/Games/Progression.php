@@ -4,7 +4,7 @@ namespace Braingames\Games\Progression;
 
 use function BrainGames\Cli\runEngine;
 
-function findProgressionMember()
+function generateProgressionGameData()
 {
     $gameDescription = 'What number is missing in the progression?';
     $gameData = [];
