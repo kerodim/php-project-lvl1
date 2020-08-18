@@ -42,23 +42,26 @@ brain-progression
 brain-prime
 ```
 
+### Примеры
 Установка пакета  
 [![asciicast](https://asciinema.org/a/2aG2jcb4QQnuNkhysNsuLFIGB.svg)](https://asciinema.org/a/2aG2jcb4QQnuNkhysNsuLFIGB)
 
-Игра: "Проверка на чётность"  
-[![asciicast](https://asciinema.org/a/H8f6H7H17MMHZh6Byz5ofrjdc.svg)](https://asciinema.org/a/H8f6H7H17MMHZh6Byz5ofrjdc)
+Игра "Проверка на чётность" 
+[![asciicast](https://asciinema.org/a/n1zZ9g5GIeSUNu4C1YzeTgDNQ.svg)](https://asciinema.org/a/n1zZ9g5GIeSUNu4C1YzeTgDNQ) 
+[![asciicast](https://asciinema.org/a/LCPoGtafk4sPCCSUZ27LQIK3g.svg)](https://asciinema.org/a/LCPoGtafk4sPCCSUZ27LQIK3g)
 
-Игра: "Калькулятор"  
-[![asciicast](https://asciinema.org/a/0Z3QWJyJTKxaVjXirtRlkA12y.svg)](https://asciinema.org/a/0Z3QWJyJTKxaVjXirtRlkA12y)
-[![asciicast](https://asciinema.org/a/Ndk7kNPVcMWohmAmeh38PJjWT.svg)](https://asciinema.org/a/Ndk7kNPVcMWohmAmeh38PJjWT)
+Игра "Калькулятор"  
+[![asciicast](https://asciinema.org/a/bNmovRZ7POO78jQtujBQpCIiu.svg)](https://asciinema.org/a/bNmovRZ7POO78jQtujBQpCIiu)
+[![asciicast](https://asciinema.org/a/mKDOSm7KHE3RKP2GnA9RhLp8v.svg)](https://asciinema.org/a/mKDOSm7KHE3RKP2GnA9RhLp8v)
 
-Игра: "Наибольший общий делитель"  
-[![asciicast](https://asciinema.org/a/1LxaWMYGALIjwrtuGM3CSKshP.svg)](https://asciinema.org/a/1LxaWMYGALIjwrtuGM3CSKshP)
-[![asciicast](https://asciinema.org/a/wWUkuaFCLsotgEwQS3ikb1vj1.svg)](https://asciinema.org/a/wWUkuaFCLsotgEwQS3ikb1vj1)
+Игра "Наибольший общий делитель"  
+[![asciicast](https://asciinema.org/a/dR2JahJ1zRkQAXMCMM28RIIKN.svg)](https://asciinema.org/a/dR2JahJ1zRkQAXMCMM28RIIKN)
+[![asciicast](https://asciinema.org/a/Q6btcpSblow9moc9bwh2pl668.svg)](https://asciinema.org/a/Q6btcpSblow9moc9bwh2pl668)
 
-Игра: "Арифметическая прогрессия"  
-[![asciicast](https://asciinema.org/a/ofgPqyjCiOwVDbIPLEVey1GDB.svg)](https://asciinema.org/a/ofgPqyjCiOwVDbIPLEVey1GDB)
-[![asciicast](https://asciinema.org/a/aMK44hcveBFK2ENla9T4ZDVqM.svg)](https://asciinema.org/a/aMK44hcveBFK2ENla9T4ZDVqM)
+Игра "Арифметическая прогрессия" 
+[![asciicast](https://asciinema.org/a/TIrqLs1IeuiqnMDhjWixE7hld.svg)](https://asciinema.org/a/TIrqLs1IeuiqnMDhjWixE7hld)
+[![asciicast](https://asciinema.org/a/6k5NYWj0GTnRtdeBlYNr6aPQ2.svg)](https://asciinema.org/a/6k5NYWj0GTnRtdeBlYNr6aPQ2)
 
-Игра: "Простое ли число?"  
-[![asciicast](https://asciinema.org/a/KF1xKMxqh2ZVRjRx5xl6O2qEt.svg)](https://asciinema.org/a/KF1xKMxqh2ZVRjRx5xl6O2qEt)
+Игра "Простое ли число?"  
+[![asciicast](https://asciinema.org/a/5YNw1SDRXxcWUTjfPy5QSkAHK.svg)](https://asciinema.org/a/5YNw1SDRXxcWUTjfPy5QSkAHK)
+[![asciicast](https://asciinema.org/a/gK4blJ1MhbTCtIKucd353BrUx.svg)](https://asciinema.org/a/gK4blJ1MhbTCtIKucd353BrUx)
