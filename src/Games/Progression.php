@@ -11,7 +11,6 @@ function generateProgressionGameData()
 {
     $gameDescription = 'What number is missing in the progression?';
     $gameData = [];
-    $gameDataSize = getMaxCorrectAnswerNumber();
     for ($index = 0; $index < ROUNDNUMBERS; $index++) {
         $progressionMember = rand(1, 100);
         $progressionStep = rand(-5, 5);
