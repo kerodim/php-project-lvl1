@@ -8,7 +8,7 @@ use const BrainGames\Cli\ROUND_NUMBERS;
 
 function isPrime($number)
 {
-    if (($number < 2) || ($number % 1 !== 0)) {
+    if (($number < 2) || (!is_int($number))) {
         return false;
     }
     for ($count = 2; $count <= sqrt($number); $count++) {
