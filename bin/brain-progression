@@ -2,7 +2,7 @@
 
 <?php
 
-use function Braingames\Games\Progression\generateProgressionGameData;
+use function Braingames\Games\Progression\runProgressionGame;
 
 $autoloadPath1 = __DIR__ . '/../../../autoload.php';
 $autoloadPath2 = __DIR__ . '/../vendor/autoload.php';
