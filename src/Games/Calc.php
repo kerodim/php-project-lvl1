@@ -6,7 +6,7 @@ use function BrainGames\Cli\runEngine;
 
 use const BrainGames\Cli\ROUND_NUMBERS;
 
-function runCalGame()
+function runCalcGame()
 {
     $gameDescription = 'What is the result of the expression?';
     $gameData = [];
