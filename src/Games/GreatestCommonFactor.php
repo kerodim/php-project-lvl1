@@ -3,9 +3,8 @@
 namespace Braingames\Games\GreatestCommonFactor;
 
 use function BrainGames\Cli\runEngine;
-use function BrainGames\Cli\getMaxCorrectAnswerNumber;
 
-use const BrainGames\Cli\ROUNDNUMBERS;
+use const BrainGames\Cli\ROUND_NUMBERS;
 
 function findGreatestCommonDivisor($firstNumber, $secondNumber)
 {
@@ -25,11 +24,11 @@ function findGreatestCommonDivisor($firstNumber, $secondNumber)
     return $lowerNumber;
 }
 
-function generateGcdGameData()
+function runGcdGame()
 {
     $gameDescription = 'Find the greatest common divisor of given numbers.';
     $gameData = [];
-    for ($index = 0; $index < ROUNDNUMBERS; $index++) {
+    for ($index = 0; $index < ROUND_NUMBERS; $index++) {
         $firstNumber = rand(1, 100);
         $secondNumber = rand(1, 100);
         $givenNumbers = (string) $firstNumber . ' ' . (string) $secondNumber;

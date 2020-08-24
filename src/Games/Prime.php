@@ -3,9 +3,8 @@
 namespace Braingames\Games\Prime;
 
 use function BrainGames\Cli\runEngine;
-use function BrainGames\Cli\getMaxCorrectAnswerNumber;
 
-use const BrainGames\Cli\ROUNDNUMBERS;
+use const BrainGames\Cli\ROUND_NUMBERS;
 
 function isPrime($number)
 {
@@ -20,11 +19,11 @@ function isPrime($number)
     return true;
 }
 
-function generatePrimeGameData()
+function runPrimeGame()
 {
     $gameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
     $gameData = [];
-    for ($index = 0; $index < ROUNDNUMBERS; $index++) {
+    for ($index = 0; $index < ROUND_NUMBERS; $index++) {
         $gameQuestion = rand(1, 100);
         $correctAnswer = isPrime($gameQuestion) ? 'yes' : 'no';
         $gameData[$index] = $gameQuestion . ' ' . $correctAnswer;

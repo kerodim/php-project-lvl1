@@ -3,15 +3,14 @@
 namespace Braingames\Games\Progression;
 
 use function BrainGames\Cli\runEngine;
-use function BrainGames\Cli\getMaxCorrectAnswerNumber;
 
-use const BrainGames\Cli\ROUNDNUMBERS;
+use const BrainGames\Cli\ROUND_NUMBERS;
 
-function generateProgressionGameData()
+function runProgressionGame()
 {
     $gameDescription = 'What number is missing in the progression?';
     $gameData = [];
-    for ($index = 0; $index < ROUNDNUMBERS; $index++) {
+    for ($index = 0; $index < ROUND_NUMBERS; $index++) {
         $progressionMember = rand(1, 100);
         $progressionStep = rand(-5, 5);
         $progressionLehgth = 10;

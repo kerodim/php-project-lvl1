@@ -5,7 +5,7 @@ namespace BrainGames\Cli;
 use function Cli\line;
 use function Cli\prompt;
 
-const ROUNDNUMBERS = 3;
+const ROUND_NUMBERS = 3;
 
 function runEngine($gameDescription, $gameData)
 {
