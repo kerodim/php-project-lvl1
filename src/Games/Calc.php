@@ -14,8 +14,7 @@ function runCalGame()
         $firstNumber = rand(1, 100);
         $secondNumber = rand(1, 100);
         $operations = ['+', '-', '*'];
-        $numberOfOperations = count($operations);
-        $operation = $operations[rand(0, $numberOfOperations - 1)];
+        $operation = $operations[array_rand($operations)];
         $expression = (string) $firstNumber . ' ' . $operation . ' ' . (string) $secondNumber;
         switch ($operation) {
             case '+':
