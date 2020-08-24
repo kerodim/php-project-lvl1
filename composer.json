@@ -23,7 +23,7 @@
              "src/Cli.php",
              "src/Games/Even.php",
              "src/Games/Calc.php",
-             "src/Games/GreatestCommonFactor.php",
+             "src/Games/GreatestCommonDivisor.php",
              "src/Games/Progression.php",
              "src/Games/Prime.php"
         ]

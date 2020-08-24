@@ -1,6 +1,6 @@
 <?php
 
-namespace Braingames\Games\GreatestCommonFactor;
+namespace Braingames\Games\GreatestCommonDivisor;
 
 use function BrainGames\Cli\runEngine;
 
