@@ -22,7 +22,7 @@ function runProgressionGame()
         }
         $progression[$unknownMemberNumber - 1] = '..';
         $progressionString = implode(' ', $progression);
-        $gameData[$index] = $progressionString . ' ' . $missingMember;
+        $gameData[$index] = $progressionString . ' ' . (string) $missingMember;
     }
     runEngine($gameDescription, $gameData);
 }
