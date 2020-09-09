@@ -5,6 +5,8 @@ namespace BrainGames\Games\Calc;
 use function BrainGames\Cli\runEngine;
 
 use const BrainGames\Cli\ROUND_NUMBERS;
+use const BrainGames\Cli\INDEX_OF_QUESTIONS;
+use const BrainGames\Cli\INDEX_OF_ANSWERS;
 
 function runCalcGame()
 {
@@ -29,8 +31,8 @@ function runCalcGame()
             default:
                 throw new \Error("Unknown operator: '{$operation}'!");
         }
-        $gameData[$index][0] = $expression;
-        $gameData[$index][1] = (string) $expressionValue;
+        $gameData[$index][INDEX_OF_QUESTIONS] = $expression;
+        $gameData[$index][INDEX_OF_ANSWERS] = (string) $expressionValue;
     }
     runEngine($gameDescription, $gameData);
 }

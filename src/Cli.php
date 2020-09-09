@@ -6,6 +6,8 @@ use function Cli\line;
 use function Cli\prompt;
 
 const ROUND_NUMBERS = 3;
+const INDEX_OF_QUESTIONS = 0;
+const INDEX_OF_ANSWERS = 1;
 
 function runEngine($gameDescription, $gameData)
 {
@@ -16,8 +18,8 @@ function runEngine($gameDescription, $gameData)
     line("Hello, %s!", $playerName);
     line('');
     foreach ($gameData as $roundData) {
-        $question = $roundData[0];
-        $correctAnswer = $roundData[1];
+        $question = $roundData[INDEX_OF_QUESTIONS];
+        $correctAnswer = $roundData[INDEX_OF_ANSWERS];
                 line('Question: %s', $question);
         $userAnswer = prompt('Your answer');
         if ($userAnswer === $correctAnswer) {

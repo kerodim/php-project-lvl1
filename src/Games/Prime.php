@@ -5,6 +5,8 @@ namespace Braingames\Games\Prime;
 use function BrainGames\Cli\runEngine;
 
 use const BrainGames\Cli\ROUND_NUMBERS;
+use const BrainGames\Cli\INDEX_OF_QUESTIONS;
+use const BrainGames\Cli\INDEX_OF_ANSWERS;
 
 function isPrime($number)
 {
@@ -26,8 +28,8 @@ function runPrimeGame()
     for ($index = 0; $index < ROUND_NUMBERS; $index++) {
         $gameQuestion = rand(1, 100);
         $correctAnswer = isPrime($gameQuestion) ? 'yes' : 'no';
-        $gameData[$index][0] = $gameQuestion;
-        $gameData[$index][1] = $correctAnswer;
+        $gameData[$index][INDEX_OF_QUESTIONS] = $gameQuestion;
+        $gameData[$index][INDEX_OF_ANSWERS] = $correctAnswer;
     }
     runEngine($gameDescription, $gameData);
 }

@@ -5,6 +5,8 @@ namespace BrainGames\Games\Even;
 use function BrainGames\Cli\runEngine;
 
 use const BrainGames\Cli\ROUND_NUMBERS;
+use const BrainGames\Cli\INDEX_OF_QUESTIONS;
+use const BrainGames\Cli\INDEX_OF_ANSWERS;
 
 function runEvenGame()
 {
@@ -13,8 +15,8 @@ function runEvenGame()
     for ($index = 0; $index < ROUND_NUMBERS; $index++) {
         $gameQuestion = rand(1, 100);
         $correctAnswer = $gameQuestion % 2 === 0 ? 'yes' : 'no';
-        $gameData[$index][0] = (string) $gameQuestion;
-        $gameData[$index][1] = (string) $correctAnswer;
+        $gameData[$index][INDEX_OF_QUESTIONS] = (string) $gameQuestion;
+        $gameData[$index][INDEX_OF_ANSWERS] = (string) $correctAnswer;
     }
     runEngine($gameDescription, $gameData);
 }

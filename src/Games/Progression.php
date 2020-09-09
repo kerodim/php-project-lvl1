@@ -5,6 +5,8 @@ namespace Braingames\Games\Progression;
 use function BrainGames\Cli\runEngine;
 
 use const BrainGames\Cli\ROUND_NUMBERS;
+use const BrainGames\Cli\INDEX_OF_QUESTIONS;
+use const BrainGames\Cli\INDEX_OF_ANSWERS;
 
 function runProgressionGame()
 {
@@ -22,8 +24,8 @@ function runProgressionGame()
         }
         $progression[$unknownMemberNumber - 1] = '..';
         $progressionString = implode(' ', $progression);
-        $gameData[$index][0] = $progressionString;
-        $gameData[$index][1] = (string) $missingMember;
+        $gameData[$index][INDEX_OF_QUESTIONS] = $progressionString;
+        $gameData[$index][INDEX_OF_ANSWERS] = (string) $missingMember;
     }
     runEngine($gameDescription, $gameData);
 }
