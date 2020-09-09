@@ -2,7 +2,7 @@
 
 <?php
 
-use function Braingames\Games\GreatestCommonFactor\runGcdGame;
+use function Braingames\Games\GreatestCommonDivisor\runGcdGame;
 
 $autoloadPath1 = __DIR__ . '/../../../autoload.php';
 $autoloadPath2 = __DIR__ . '/../vendor/autoload.php';
