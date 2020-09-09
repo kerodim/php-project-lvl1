@@ -13,7 +13,9 @@ function runEvenGame()
     for ($index = 0; $index < ROUND_NUMBERS; $index++) {
         $gameQuestion = rand(1, 100);
         $correctAnswer = $gameQuestion % 2 === 0 ? 'yes' : 'no';
-        $gameData[$index] = (string) $gameQuestion . ' ' . $correctAnswer;
+        # $gameData[$index] = (string) $gameQuestion . ' ' . $correctAnswer;
+        $gameData[$index][0] = (string) $gameQuestion;
+        $gameData[$index][1] = (string) $correctAnswer;
     }
     runEngine($gameDescription, $gameData);
 }

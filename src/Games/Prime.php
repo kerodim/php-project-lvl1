@@ -26,7 +26,9 @@ function runPrimeGame()
     for ($index = 0; $index < ROUND_NUMBERS; $index++) {
         $gameQuestion = rand(1, 100);
         $correctAnswer = isPrime($gameQuestion) ? 'yes' : 'no';
-        $gameData[$index] = $gameQuestion . ' ' . $correctAnswer;
+        # $gameData[$index] = $gameQuestion . ' ' . $correctAnswer;
+        $gameData[$index][0] = $gameQuestion;
+        $gameData[$index][1] = $correctAnswer;
     }
     runEngine($gameDescription, $gameData);
 }

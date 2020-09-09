@@ -29,7 +29,9 @@ function runCalcGame()
             default:
                 throw new \Error("Unknown operator: '{$operation}'!");
         }
-        $gameData[$index] = $expression . ' ' . (string) $expressionValue;
+        # $gameData[$index] = $expression . ' ' . (string) $expressionValue;
+        $gameData[$index][0] = $expression;
+        $gameData[$index][1] = (string) $expressionValue;
     }
     runEngine($gameDescription, $gameData);
 }
