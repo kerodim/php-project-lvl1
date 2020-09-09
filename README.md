@@ -46,7 +46,7 @@ brain-prime
 Установка пакета  
 [![asciicast](https://asciinema.org/a/2aG2jcb4QQnuNkhysNsuLFIGB.svg)](https://asciinema.org/a/2aG2jcb4QQnuNkhysNsuLFIGB)
 
-Игра "Проверка на чётность" 
+Игра "Проверка на чётность"  
 [![asciicast](https://asciinema.org/a/n1zZ9g5GIeSUNu4C1YzeTgDNQ.svg)](https://asciinema.org/a/n1zZ9g5GIeSUNu4C1YzeTgDNQ) 
 [![asciicast](https://asciinema.org/a/LCPoGtafk4sPCCSUZ27LQIK3g.svg)](https://asciinema.org/a/LCPoGtafk4sPCCSUZ27LQIK3g)
 
@@ -58,7 +58,7 @@ brain-prime
 [![asciicast](https://asciinema.org/a/dR2JahJ1zRkQAXMCMM28RIIKN.svg)](https://asciinema.org/a/dR2JahJ1zRkQAXMCMM28RIIKN)
 [![asciicast](https://asciinema.org/a/Q6btcpSblow9moc9bwh2pl668.svg)](https://asciinema.org/a/Q6btcpSblow9moc9bwh2pl668)
 
-Игра "Арифметическая прогрессия" 
+Игра "Арифметическая прогрессия"  
 [![asciicast](https://asciinema.org/a/TIrqLs1IeuiqnMDhjWixE7hld.svg)](https://asciinema.org/a/TIrqLs1IeuiqnMDhjWixE7hld)
 [![asciicast](https://asciinema.org/a/6k5NYWj0GTnRtdeBlYNr6aPQ2.svg)](https://asciinema.org/a/6k5NYWj0GTnRtdeBlYNr6aPQ2)
 
