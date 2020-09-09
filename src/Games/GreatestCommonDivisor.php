@@ -33,7 +33,6 @@ function runGcdGame()
         $secondNumber = rand(1, 100);
         $givenNumbers = (string) $firstNumber . ' ' . (string) $secondNumber;
         $greatestCommonDivisor = findGreatestCommonDivisor($firstNumber, $secondNumber);
-        # $gameData[$index] = $givenNumbers . ' ' . (string) $greatestCommonDivisor;
         $gameData[$index][0] = $givenNumbers;
         $gameData[$index][1] = (string) $greatestCommonDivisor;
     }

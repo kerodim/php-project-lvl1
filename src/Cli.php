@@ -16,9 +16,6 @@ function runEngine($gameDescription, $gameData)
     line("Hello, %s!", $playerName);
     line('');
     foreach ($gameData as $roundData) {
-        # $separatorPosition = strripos($roundData, ' ');
-        # $correctAnswer = substr($roundData, $separatorPosition + 1);
-        # $question = substr($roundData, 0, strlen($roundData) - strlen($correctAnswer) - 1);
         $question = $roundData[0];
         $correctAnswer = $roundData[1];
                 line('Question: %s', $question);
