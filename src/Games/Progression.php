@@ -4,7 +4,7 @@ namespace Braingames\Games\Progression;
 
 use function BrainGames\Cli\runEngine;
 
-use const BrainGames\Cli\ROUND_NUMBERS;
+use const BrainGames\Cli\ROUND_OF_NUMBERS;
 use const BrainGames\Cli\INDEX_OF_QUESTIONS;
 use const BrainGames\Cli\INDEX_OF_ANSWERS;
 
@@ -12,7 +12,7 @@ function runProgressionGame()
 {
     $gameDescription = 'What number is missing in the progression?';
     $gameData = [];
-    for ($index = 0; $index < ROUND_NUMBERS; $index++) {
+    for ($index = 0; $index < ROUND_OF_NUMBERS; $index++) {
         $progressionMember = rand(1, 100);
         $progressionStep = rand(-5, 5);
         $progressionLehgth = 10;

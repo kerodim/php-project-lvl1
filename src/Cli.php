@@ -5,7 +5,7 @@ namespace BrainGames\Cli;
 use function Cli\line;
 use function Cli\prompt;
 
-const ROUND_NUMBERS = 3;
+const ROUND_OF_NUMBERS = 3;
 const INDEX_OF_QUESTIONS = 0;
 const INDEX_OF_ANSWERS = 1;
 
