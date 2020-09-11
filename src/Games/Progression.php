@@ -19,13 +19,13 @@ function runProgressionGame()
         $unknownMemberNumber = rand(1, $progressionLehgth);
         $missingMember = $firstProgressionMember + $progressionStep * $unknownMemberNumber;
         $progression = [];
-        for ($count = 1; $count <= $progressionLehgth; $count++) {
+        for ($count = 0; $count < $progressionLehgth; $count++) {
             $progression[] = $firstProgressionMember + $progressionStep * $count;
         }
-        $progression[$unknownMemberNumber - 1] = '..';
+        $progression[$unknownMemberNumber] = '..';
         $progressionString = implode(' ', $progression);
         $gameData[$index][INDEX_OF_QUESTIONS] = $progressionString;
-        $gameData[$index][INDEX_OF_ANSWERS] = (string) $missingMember;
+        $gameData[$index][INDEX_OF_ANSWERS] = (string) $missingMember;  
     }
     runEngine($gameDescription, $gameData);
 }
