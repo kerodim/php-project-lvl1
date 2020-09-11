@@ -4,15 +4,13 @@ namespace BrainGames\Games\Calc;
 
 use function BrainGames\Cli\runEngine;
 
-use const BrainGames\Cli\NUMBERS_OF_ROUND;
-use const BrainGames\Cli\INDEX_OF_QUESTIONS;
-use const BrainGames\Cli\INDEX_OF_ANSWERS;
+use const BrainGames\Cli\NUMBER_OF_ROUNDS;
 
 function runCalcGame()
 {
     $gameDescription = 'What is the result of the expression?';
     $gameData = [];
-    for ($index = 0; $index < NUMBERS_OF_ROUND; $index++) {
+    for ($index = 0; $index < NUMBER_OF_ROUNDS; $index++) {
         $firstNumber = rand(1, 100);
         $secondNumber = rand(1, 100);
         $operations = ['+', '-', '*'];
@@ -31,8 +29,7 @@ function runCalcGame()
             default:
                 throw new \Error("Unknown operator: '{$operation}'!");
         }
-        $gameData[$index][INDEX_OF_QUESTIONS] = $expression;
-        $gameData[$index][INDEX_OF_ANSWERS] = (string) $expressionValue;
+        $gameData[$index] = [$expression, (string) $expressionValue];
     }
     runEngine($gameDescription, $gameData);
 }

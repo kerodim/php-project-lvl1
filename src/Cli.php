@@ -5,9 +5,7 @@ namespace BrainGames\Cli;
 use function Cli\line;
 use function Cli\prompt;
 
-const NUMBERS_OF_ROUND = 3;
-const INDEX_OF_QUESTIONS = 0;
-const INDEX_OF_ANSWERS = 1;
+const NUMBER_OF_ROUNDS = 3;
 
 function runEngine($gameDescription, $gameData)
 {
@@ -18,8 +16,7 @@ function runEngine($gameDescription, $gameData)
     line("Hello, %s!", $playerName);
     line('');
     foreach ($gameData as $roundData) {
-        $question = $roundData[INDEX_OF_QUESTIONS];
-        $correctAnswer = $roundData[INDEX_OF_ANSWERS];
+        [$question, $correctAnswer] = $roundData;
                 line('Question: %s', $question);
         $userAnswer = prompt('Your answer');
         if ($userAnswer === $correctAnswer) {

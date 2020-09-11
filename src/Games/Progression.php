@@ -4,15 +4,13 @@ namespace Braingames\Games\Progression;
 
 use function BrainGames\Cli\runEngine;
 
-use const BrainGames\Cli\NUMBERS_OF_ROUND;
-use const BrainGames\Cli\INDEX_OF_QUESTIONS;
-use const BrainGames\Cli\INDEX_OF_ANSWERS;
+use const BrainGames\Cli\NUMBER_OF_ROUNDS;
 
 function runProgressionGame()
 {
     $gameDescription = 'What number is missing in the progression?';
     $gameData = [];
-    for ($index = 0; $index < NUMBERS_OF_ROUND; $index++) {
+    for ($index = 0; $index < NUMBER_OF_ROUNDS; $index++) {
         $firstProgressionMember = rand(1, 100);
         $progressionStep = rand(-5, 5);
         $progressionLehgth = 10;
@@ -24,8 +22,7 @@ function runProgressionGame()
         }
         $progression[$unknownMemberNumber] = '..';
         $progressionString = implode(' ', $progression);
-        $gameData[$index][INDEX_OF_QUESTIONS] = $progressionString;
-        $gameData[$index][INDEX_OF_ANSWERS] = (string) $missingMember;
+        $gameData[$index] = [$progressionString, (string) $missingMember];
     }
     runEngine($gameDescription, $gameData);
 }
