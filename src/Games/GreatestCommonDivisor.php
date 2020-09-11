@@ -10,13 +10,8 @@ use const BrainGames\Cli\INDEX_OF_ANSWERS;
 
 function findGreatestCommonDivisor($firstNumber, $secondNumber)
 {
-    if ($firstNumber >= $secondNumber) {
-        $greaterNumber = $firstNumber;
-        $lowerNumber = $secondNumber;
-    } else {
-        $greaterNumber = $secondNumber;
-        $lowerNumber = $firstNumber;
-    }
+    $greaterNumber = max($firstNumber, $secondNumber);
+    $lowerNumber = min($firstNumber, $secondNumber);
     $remainder = $greaterNumber % $lowerNumber;
     while ($remainder !== 0) {
         $greaterNumber = $lowerNumber;
