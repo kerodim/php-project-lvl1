@@ -17,7 +17,7 @@ function runCalcGame()
         $secondNumber = rand(1, 100);
         $operations = ['+', '-', '*'];
         $operation = $operations[array_rand($operations)];
-        $expression = (string) $firstNumber . ' ' . $operation . ' ' . (string) $secondNumber;
+        $expression = $firstNumber . ' ' . $operation . ' ' . $secondNumber;
         switch ($operation) {
             case '+':
                 $expressionValue = $firstNumber + $secondNumber;
