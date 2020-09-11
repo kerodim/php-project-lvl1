@@ -10,7 +10,6 @@ use const BrainGames\Cli\NUMBER_OF_ROUNDS;
 
 function isPrime(int $number)
 {
-    # print_r("\nnumber - {$number}");
     if ($number < 2) {
         return false;
     }
@@ -28,14 +27,13 @@ function runPrimeGame()
     $gameData = [];
     for ($index = 0; $index < NUMBER_OF_ROUNDS; $index++) {
         $gameQuestion = rand(1, 100);
-        /* $gameQuestion = 3.5;
+        # $gameQuestion = 3.5;
         try {
             $correctAnswer = isPrime($gameQuestion) ? 'yes' : 'no';
-        } catch (TypeError $e) {
-             echo 'Ошибка: '.$e->getMessage();
+        } catch (\TypeError $e) {
+            print_r("Error: " . $e->getMessage() . "\n");
+            exit;
         }
-        */
-        $correctAnswer = isPrime($gameQuestion) ? 'yes' : 'no';
         $gameData[$index] = [$gameQuestion, $correctAnswer];
     }
     runEngine($gameDescription, $gameData);
