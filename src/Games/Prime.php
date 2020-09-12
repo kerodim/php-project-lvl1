@@ -27,7 +27,6 @@ function runPrimeGame()
     $gameData = [];
     for ($index = 0; $index < NUMBER_OF_ROUNDS; $index++) {
         $gameQuestion = rand(1, 100);
-        # $gameQuestion = 3.5;
         try {
             $correctAnswer = isPrime($gameQuestion) ? 'yes' : 'no';
         } catch (\TypeError $e) {
