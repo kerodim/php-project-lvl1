@@ -16,7 +16,7 @@ function runEngine($gameDescription, $gameData)
     line("Hello, %s!", $playerName);
     line('');
     foreach ($gameData as [$question, $correctAnswer]) {
-            line('Question: %s', $question);
+        line('Question: %s', $question);
         $userAnswer = prompt('Your answer');
         if ($userAnswer === $correctAnswer) {
             line('Correct!');
